@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-veloure-black: #0B0B0B;
+  --color-veloure-surface: #151515;
+  --color-veloure-card: #1A1A1A;
+  --color-veloure-border: #262626;
+  --color-veloure-ivory: #F6F1E8;
+  --color-veloure-gold: #C8A96B;
+  --color-veloure-gold-light: #DFCA9B;
+  --color-veloure-beige: #D8CBB8;
+  --color-veloure-muted: #AAA49A;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0B0B0B;
+  color: #F6F1E8;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A96B;
+}
+
+/* Devanagari needs natural spacing and additional vertical room. */
+html[lang="hi"] body { font-family: "Nirmala UI", "Mangal", sans-serif; }
+html[lang="hi"] h1, html[lang="hi"] h2, html[lang="hi"] h3,
+html[lang="hi"] .font-serif { font-family: "Nirmala UI", "Mangal", serif; line-height: 1.4; }
+html[lang="hi"] [class*="tracking-"] { letter-spacing: normal; }

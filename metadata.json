@@ -1,0 +1,6 @@
+{
+  "name": "VELOURÉ | Luxury Fragrance Discovery",
+  "description": "Find the fragrance that feels like you. An intelligent luxury perfume boutique with personal scent profile, layering lab, and bespoke discovery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
